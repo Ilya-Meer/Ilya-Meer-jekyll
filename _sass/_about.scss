@@ -1,0 +1,32 @@
+.about {
+  height: auto;
+
+  .container {
+    max-width: 100%;
+  }
+  
+  main {
+    @include tablet {
+      display: flex;
+    }
+  }
+  .bio {
+    @include tablet {
+      width: 70%;
+      padding-right: 1rem;
+      text-align: justify;
+    }
+  }
+
+  .img-wrapper {
+    width: 200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+
+  .lets-chat {
+    color: darkred;
+  }
+}

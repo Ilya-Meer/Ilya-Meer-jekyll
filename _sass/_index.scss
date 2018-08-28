@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 1.5rem 2rem 1.5rem;
+  @include tablet {
+    max-width: 40rem;
+    padding: 0 1.5rem 2rem 5rem;
+  }
+}
+
+.masthead {
+  h1 {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+  h3 {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.coffee {
+  color: darkred;
+}

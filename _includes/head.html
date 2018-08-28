@@ -1,6 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111425265-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-111425265-1');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Ilya Meerovich">
+  <meta name="google-site-verification" content="EV81tMl3WNgxgy-AeRbBHZiee9SJO4ZXS-k3FOYakVE" />
 
   <title>
     {% if page.title == "Home" %}
@@ -11,7 +24,12 @@
   </title>
 
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet">
 </head>
+
+<body class="{{page.body_class}}">
+
+  {% include navigation.html%}

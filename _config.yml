@@ -2,8 +2,8 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
+title:               Ilya Meerovich
+tagline:             Just a web dev from Vancouver.
 url:                 http://getpoole.com
 paginate:            1
 baseurl:             ""
@@ -17,14 +17,10 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Ilya Meerovich
+  url:               https://github.com/Ilya-Meer
+  email:             ilya.meerov@gmail.com
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
 
 # Gems
 gems:
