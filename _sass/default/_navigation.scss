@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   @include tablet {
-    justify-content: space-around;
+    padding: 0 5rem;
   }
 
   ul {
@@ -59,9 +59,15 @@
   .site-link {
     margin-left: 2rem;
     @include tablet {
-      margin-left: 10px;
+      margin-left: 0;
     }
   }
+  li:last-of-type {
+    @include tablet {
+      margin-right: 0;
+    }
+  }
+
 }
 
 .hamburger {
