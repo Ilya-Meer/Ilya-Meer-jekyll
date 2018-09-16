@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0;
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
   @include tablet {
     padding: 0 5rem;
   }
