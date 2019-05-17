@@ -4,6 +4,13 @@ title: Home
 body_class: 'index'
 ---
 
-<div>
-  <p>Hi there! I'm a Web Developer from Vancouver who likes building cool stuff! <a class="coffee" href="{{site.baseurl}}/pages/contact">How about a coffee?</a>
-</div>
+<script>
+  {% include js/three.min.js %}
+  {% include js/ObjectControls.js %}
+</script>
+
+<canvas id="canvas"></canvas>
+
+<script>
+  {% include js/demo.js %}
+</script>
