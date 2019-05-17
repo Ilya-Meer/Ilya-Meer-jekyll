@@ -1,7 +1,7 @@
 .site-nav {
-  padding: 0;
+  padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   opacity: 0;
   animation: fadeIn;
@@ -13,27 +13,25 @@
   }
 
   ul {
-    padding: 0;
     margin: 0;
-    display: none;
+    padding: 0;
+    display: flex;
     list-style: none;
-    @include tablet {
-      display: flex;
-    }
   }
 
   .site-link, li {
     margin: 0 10px;
-    padding: 1.5rem 3px;
+    padding: 1.5rem 3px 5px;
     overflow: hidden;
     position: relative;
     &::before {
       content: '';
       height: 1px;
-      width: 100px;
+      width: 90%;
       position: absolute;
-      top: 0;
-      left: 0;
+      bottom: -5px;
+      left: 50%;
+      transform: translate(-50%);
       display: block;
       background: $gray-3;
       opacity: 0;
@@ -43,20 +41,18 @@
 
     &:hover {
       a { 
-        color: #fff; 
         text-decoration: none;
       }
       &::before {
         content: '';
-        height: 100px;
-        width: 100px;
+        height: 2px;
+        width: 90%;
         position: absolute;
-        top: 0;
-        left: 0;
+        bottom: 5px;
         display: block;
         background: $gray-5;
         opacity: 1;
-        transition: all .3s ease-in-out;
+        transition: all .2s linear;
       }
     }
   }
@@ -73,124 +69,4 @@
     }
   }
 
-}
-
-.hamburger {
-  display: inline;
-  cursor: pointer;
-  padding-right: 2rem;
-  opacity: 1;
-  animation: fadeIn 0.2s linear;
-  animation-fill-mode: forwards;
-  @include tablet {
-    display: none;
-  }
-  span {
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    display: flex;
-    flex-direction: column;
-    background: #000;
-  }
-}
-
-
-
-.sidebar {
-  height: 100vh;
-  width: 100%;
-  display: none;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  padding-top: 2rem;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  background: #000;
-  transition: transform .5s ease-in-out;
-  animation: slideOut 0.5s;
-  animation-fill-mode: forwards;
-
-  .close-icon {
-    cursor: pointer;
-    padding-right: 2rem;
-    span {
-      width: 30px;
-      height: 3px;
-      margin: 5px 0;
-      display: flex;
-      flex-direction: column;
-      background: #fff;
-      &:first-of-type {
-        transform: rotate(45deg);
-      }
-      &:nth-of-type(2) {
-        transform: rotate(-45deg) translate(5px, -6px);
-      }
-    }
-  }
-
-  ul {
-    width: 100%;
-    list-style: none;
-    padding-top: 2rem;
-  }
-  li {
-    margin: 15px 0;
-    font-size: 1.5rem;
-  }
-  a {
-    color: #fff;
-  }
-}
-
-.open {
-  display: flex;
-  animation: slideIn 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.faded {
-  animation: fadeOut 0.2s linear;
-  animation-fill-mode: forwards;
-}
-
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-1000px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideOut {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-1000px);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
