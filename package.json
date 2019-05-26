@@ -1,0 +1,26 @@
+{
+  "name": "Main Site",
+  "version": "1.0.0",
+  "description": "Ilya Meerovich Portfolio Site",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ilya-Meer/site.git"
+  },
+  "keywords": [],
+  "author": "Ilya Meerovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ilya-Meer/site/issues"
+  },
+  "homepage": "https://github.com/Ilya-Meer/site#readme"
+}
