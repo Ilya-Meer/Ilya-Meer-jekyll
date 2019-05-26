@@ -1,6 +1,10 @@
 .page-404 {
   width: 75%;
   margin: 2rem auto;
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.25s;
   @include tablet {
     margin: 0 auto;
   }
