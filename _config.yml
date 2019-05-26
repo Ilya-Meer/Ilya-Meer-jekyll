@@ -21,8 +21,7 @@ author:
   url:               https://github.com/Ilya-Meer
   email:             ilya.meerov@gmail.com
 
-
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
